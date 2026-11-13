@@ -1,0 +1,1353 @@
+{
+  "version": "1.0.0",
+  "name": "Epic RPG 16-Bit Pixel Art UI Manifest",
+  "art_style": "16-bit Dark Dungeon Fantasy",
+  "description": "Authoritative registry of UI pixel art assets normalized to the 24-color fantasy palette.",
+  "design_resolution": {
+    "logic_width": 480,
+    "logic_height": 320,
+    "display_scale": 2,
+    "screen_width": 960,
+    "screen_height": 640,
+    "min_window_width": 800,
+    "min_window_height": 560
+  },
+  "palette": [
+    {
+      "hex": "#0e0f14",
+      "name": "Void Black",
+      "group": "slate_gray"
+    },
+    {
+      "hex": "#14161e",
+      "name": "Slate Deep",
+      "group": "slate_gray"
+    },
+    {
+      "hex": "#1c1e2a",
+      "name": "Dungeon Stone Dark",
+      "group": "slate_gray"
+    },
+    {
+      "hex": "#2a2c3a",
+      "name": "Dungeon Stone Mid",
+      "group": "slate_gray"
+    },
+    {
+      "hex": "#3e4256",
+      "name": "Dungeon Stone Light",
+      "group": "slate_gray"
+    },
+    {
+      "hex": "#5c627e",
+      "name": "Highlight Slate",
+      "group": "slate_gray"
+    },
+    {
+      "hex": "#4a3818",
+      "name": "Gold Shadow",
+      "group": "antique_gold"
+    },
+    {
+      "hex": "#8c6e26",
+      "name": "Gold Base",
+      "group": "antique_gold"
+    },
+    {
+      "hex": "#d4af37",
+      "name": "Fantasy Gold",
+      "group": "antique_gold"
+    },
+    {
+      "hex": "#ffe182",
+      "name": "Bright Gold Highlight",
+      "group": "antique_gold"
+    },
+    {
+      "hex": "#222e24",
+      "name": "Health Bar Background",
+      "group": "combat_resource"
+    },
+    {
+      "hex": "#34b450",
+      "name": "Emerald Green",
+      "group": "combat_resource"
+    },
+    {
+      "hex": "#e44c4c",
+      "name": "Ruby Crimson",
+      "group": "combat_resource"
+    },
+    {
+      "hex": "#3686e0",
+      "name": "Sapphire Blue",
+      "group": "combat_resource"
+    },
+    {
+      "hex": "#5aa5fa",
+      "name": "Shield Cyan",
+      "group": "combat_resource"
+    },
+    {
+      "hex": "#eb5736",
+      "name": "Fire",
+      "group": "elemental"
+    },
+    {
+      "hex": "#3498db",
+      "name": "Water",
+      "group": "elemental"
+    },
+    {
+      "hex": "#2ecc71",
+      "name": "Wind",
+      "group": "elemental"
+    },
+    {
+      "hex": "#d38c38",
+      "name": "Ground",
+      "group": "elemental"
+    },
+    {
+      "hex": "#f1c40f",
+      "name": "Holy",
+      "group": "elemental"
+    },
+    {
+      "hex": "#9b59b6",
+      "name": "Dark",
+      "group": "elemental"
+    },
+    {
+      "hex": "#b2becd",
+      "name": "Normal",
+      "group": "elemental"
+    },
+    {
+      "hex": "#f0aa32",
+      "name": "Amber Warning",
+      "group": "warning_special"
+    },
+    {
+      "hex": "#a073e1",
+      "name": "Mystic Purple",
+      "group": "warning_special"
+    }
+  ],
+  "categories": [
+    "backgrounds",
+    "buttons",
+    "panels",
+    "bars",
+    "slots",
+    "icons_elements",
+    "icons_effects",
+    "controls",
+    "combat",
+    "cards"
+  ],
+  "assets": [
+    {
+      "id": "bg_main_menu",
+      "category": "backgrounds",
+      "display_name": "Main Menu Title Background",
+      "logic_width": 480,
+      "logic_height": 320,
+      "scale": 1,
+      "target_width": 480,
+      "target_height": 320,
+      "file_path": "resources/assets/ui/backgrounds/bg_main_menu.png",
+      "status": "ready"
+    },
+    {
+      "id": "btn_primary",
+      "category": "buttons",
+      "display_name": "Primary Button",
+      "logic_width": 120,
+      "logic_height": 24,
+      "scale": 2,
+      "target_width": 240,
+      "target_height": 48,
+      "slice_insets": {
+        "top": 6,
+        "left": 6,
+        "bottom": 6,
+        "right": 6
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/buttons/btn_primary_normal.png",
+      "states": {
+        "normal": "resources/assets/ui/buttons/btn_primary_normal.png",
+        "hover": "resources/assets/ui/buttons/btn_primary_hover.png",
+        "pressed": "resources/assets/ui/buttons/btn_primary_pressed.png",
+        "disabled": "resources/assets/ui/buttons/btn_primary_disabled.png"
+      },
+      "state_strip": "resources/assets/ui/buttons/btn_primary_strip.png",
+      "status": "ready"
+    },
+    {
+      "id": "btn_secondary_large",
+      "category": "buttons",
+      "display_name": "Secondary Button (Large)",
+      "logic_width": 120,
+      "logic_height": 24,
+      "scale": 2,
+      "target_width": 240,
+      "target_height": 48,
+      "slice_insets": {
+        "top": 6,
+        "left": 6,
+        "bottom": 6,
+        "right": 6
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/buttons/btn_secondary_large_normal.png",
+      "states": {
+        "normal": "resources/assets/ui/buttons/btn_secondary_large_normal.png",
+        "hover": "resources/assets/ui/buttons/btn_secondary_large_hover.png",
+        "pressed": "resources/assets/ui/buttons/btn_secondary_large_pressed.png",
+        "disabled": "resources/assets/ui/buttons/btn_secondary_large_disabled.png"
+      },
+      "state_strip": "resources/assets/ui/buttons/btn_secondary_large_strip.png",
+      "status": "ready"
+    },
+    {
+      "id": "btn_success",
+      "category": "buttons",
+      "display_name": "Success Button (Action / Confirm)",
+      "logic_width": 120,
+      "logic_height": 24,
+      "scale": 2,
+      "target_width": 240,
+      "target_height": 48,
+      "slice_insets": {
+        "top": 6,
+        "left": 6,
+        "bottom": 6,
+        "right": 6
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/buttons/btn_success_normal.png",
+      "states": {
+        "normal": "resources/assets/ui/buttons/btn_success_normal.png",
+        "hover": "resources/assets/ui/buttons/btn_success_hover.png",
+        "pressed": "resources/assets/ui/buttons/btn_success_pressed.png",
+        "disabled": "resources/assets/ui/buttons/btn_success_disabled.png"
+      },
+      "state_strip": "resources/assets/ui/buttons/btn_success_strip.png",
+      "status": "ready"
+    },
+    {
+      "id": "btn_danger",
+      "category": "buttons",
+      "display_name": "Danger Button (Cancel / Flee)",
+      "logic_width": 120,
+      "logic_height": 24,
+      "scale": 2,
+      "target_width": 240,
+      "target_height": 48,
+      "slice_insets": {
+        "top": 6,
+        "left": 6,
+        "bottom": 6,
+        "right": 6
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/buttons/btn_danger_normal.png",
+      "states": {
+        "normal": "resources/assets/ui/buttons/btn_danger_normal.png",
+        "hover": "resources/assets/ui/buttons/btn_danger_hover.png",
+        "pressed": "resources/assets/ui/buttons/btn_danger_pressed.png",
+        "disabled": "resources/assets/ui/buttons/btn_danger_disabled.png"
+      },
+      "state_strip": "resources/assets/ui/buttons/btn_danger_strip.png",
+      "status": "ready"
+    },
+    {
+      "id": "btn_primary_small",
+      "category": "buttons",
+      "display_name": "Primary Button (Small)",
+      "logic_width": 60,
+      "logic_height": 18,
+      "scale": 2,
+      "target_width": 120,
+      "target_height": 36,
+      "slice_insets": {
+        "top": 4,
+        "left": 4,
+        "bottom": 4,
+        "right": 4
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/buttons/btn_primary_small_normal.png",
+      "states": {
+        "normal": "resources/assets/ui/buttons/btn_primary_small_normal.png",
+        "hover": "resources/assets/ui/buttons/btn_primary_small_hover.png",
+        "pressed": "resources/assets/ui/buttons/btn_primary_small_pressed.png",
+        "disabled": "resources/assets/ui/buttons/btn_primary_small_disabled.png"
+      },
+      "state_strip": "resources/assets/ui/buttons/btn_primary_small_strip.png",
+      "status": "ready"
+    },
+    {
+      "id": "btn_icon",
+      "category": "buttons",
+      "display_name": "Icon Button (Square Action)",
+      "logic_width": 24,
+      "logic_height": 24,
+      "scale": 2,
+      "target_width": 48,
+      "target_height": 48,
+      "slice_insets": {
+        "top": 4,
+        "left": 4,
+        "bottom": 4,
+        "right": 4
+      },
+      "symmetry": "full",
+      "file_path": "resources/assets/ui/buttons/btn_icon_normal.png",
+      "states": {
+        "normal": "resources/assets/ui/buttons/btn_icon_normal.png",
+        "hover": "resources/assets/ui/buttons/btn_icon_hover.png",
+        "pressed": "resources/assets/ui/buttons/btn_icon_pressed.png",
+        "disabled": "resources/assets/ui/buttons/btn_icon_disabled.png"
+      },
+      "state_strip": "resources/assets/ui/buttons/btn_icon_strip.png",
+      "status": "ready"
+    },
+    {
+      "id": "panel_main",
+      "category": "panels",
+      "display_name": "Main Panel Frame",
+      "logic_width": 64,
+      "logic_height": 64,
+      "scale": 2,
+      "target_width": 128,
+      "target_height": 128,
+      "slice_insets": {
+        "top": 6,
+        "left": 6,
+        "bottom": 6,
+        "right": 6
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/panels/panel_main.png",
+      "status": "ready"
+    },
+    {
+      "id": "card_combatant_frame",
+      "category": "panels",
+      "display_name": "Combatant Card Frame",
+      "logic_width": 72,
+      "logic_height": 80,
+      "scale": 2,
+      "target_width": 144,
+      "target_height": 160,
+      "slice_insets": {
+        "top": 6,
+        "left": 6,
+        "bottom": 6,
+        "right": 6
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/panels/card_combatant_frame.png",
+      "status": "ready"
+    },
+    {
+      "id": "frame_dialog",
+      "category": "panels",
+      "display_name": "Dialog / Popup Window Frame",
+      "logic_width": 80,
+      "logic_height": 80,
+      "scale": 2,
+      "target_width": 160,
+      "target_height": 160,
+      "slice_insets": {
+        "top": 8,
+        "left": 8,
+        "bottom": 8,
+        "right": 8
+      },
+      "symmetry": "full",
+      "file_path": "resources/assets/ui/panels/frame_dialog.png",
+      "status": "ready"
+    },
+    {
+      "id": "frame_tooltip",
+      "category": "panels",
+      "display_name": "Tooltip Border Frame",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "slice_insets": {
+        "top": 4,
+        "left": 4,
+        "bottom": 4,
+        "right": 4
+      },
+      "symmetry": "full",
+      "file_path": "resources/assets/ui/panels/frame_tooltip.png",
+      "status": "ready"
+    },
+    {
+      "id": "bar_hp_frame",
+      "category": "bars",
+      "display_name": "HP Bar Frame",
+      "logic_width": 100,
+      "logic_height": 6,
+      "scale": 2,
+      "target_width": 200,
+      "target_height": 12,
+      "slice_insets": {
+        "top": 2,
+        "left": 2,
+        "bottom": 2,
+        "right": 2
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/bars/bar_hp_frame.png",
+      "status": "ready"
+    },
+    {
+      "id": "bar_hp_fill",
+      "category": "bars",
+      "display_name": "HP Bar Fill",
+      "logic_width": 100,
+      "logic_height": 4,
+      "scale": 2,
+      "target_width": 200,
+      "target_height": 8,
+      "file_path": "resources/assets/ui/bars/bar_hp_fill.png",
+      "status": "ready"
+    },
+    {
+      "id": "bar_stamina_frame",
+      "category": "bars",
+      "display_name": "Stamina Bar Frame",
+      "logic_width": 100,
+      "logic_height": 6,
+      "scale": 2,
+      "target_width": 200,
+      "target_height": 12,
+      "slice_insets": {
+        "top": 2,
+        "left": 2,
+        "bottom": 2,
+        "right": 2
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/bars/bar_stamina_frame.png",
+      "status": "ready"
+    },
+    {
+      "id": "bar_stamina_fill",
+      "category": "bars",
+      "display_name": "Stamina Bar Blue Fill",
+      "logic_width": 100,
+      "logic_height": 4,
+      "scale": 2,
+      "target_width": 200,
+      "target_height": 8,
+      "file_path": "resources/assets/ui/bars/bar_stamina_fill.png",
+      "status": "ready"
+    },
+    {
+      "id": "slot_basic",
+      "category": "slots",
+      "display_name": "Basic Attack Slot Frame",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "slice_insets": {
+        "top": 4,
+        "left": 4,
+        "bottom": 4,
+        "right": 4
+      },
+      "symmetry": "full",
+      "file_path": "resources/assets/ui/slots/slot_basic.png",
+      "status": "ready"
+    },
+    {
+      "id": "slot_skill_frame",
+      "category": "slots",
+      "display_name": "Skill Slot Frame",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "slice_insets": {
+        "top": 4,
+        "left": 4,
+        "bottom": 4,
+        "right": 4
+      },
+      "symmetry": "full",
+      "file_path": "resources/assets/ui/slots/slot_skill_frame.png",
+      "status": "ready"
+    },
+    {
+      "id": "slot_regular",
+      "category": "slots",
+      "display_name": "Regular Skill Slot Frame",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "slice_insets": {
+        "top": 4,
+        "left": 4,
+        "bottom": 4,
+        "right": 4
+      },
+      "symmetry": "full",
+      "file_path": "resources/assets/ui/slots/slot_regular.png",
+      "status": "ready"
+    },
+    {
+      "id": "slot_ultimate",
+      "category": "slots",
+      "display_name": "Ultimate Attack Slot Frame",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "slice_insets": {
+        "top": 4,
+        "left": 4,
+        "bottom": 4,
+        "right": 4
+      },
+      "symmetry": "full",
+      "file_path": "resources/assets/ui/slots/slot_ultimate.png",
+      "status": "ready"
+    },
+    {
+      "id": "elem_fire",
+      "category": "icons_elements",
+      "display_name": "Element: Fire",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/icons/elements/elem_fire.png",
+      "status": "ready"
+    },
+    {
+      "id": "elem_water",
+      "category": "icons_elements",
+      "display_name": "Element: Water",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/icons/elements/elem_water.png",
+      "status": "ready"
+    },
+    {
+      "id": "elem_wind",
+      "category": "icons_elements",
+      "display_name": "Element: Wind",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/icons/elements/elem_wind.png",
+      "status": "ready"
+    },
+    {
+      "id": "icon_element_ground",
+      "category": "icons_elements",
+      "display_name": "Element Icon: Ground",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/icons/elements/icon_element_ground.png",
+      "status": "ready"
+    },
+    {
+      "id": "icon_element_holy",
+      "category": "icons_elements",
+      "display_name": "Element Icon: Holy",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/icons/elements/icon_element_holy.png",
+      "status": "ready"
+    },
+    {
+      "id": "icon_element_dark",
+      "category": "icons_elements",
+      "display_name": "Element Icon: Dark",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/icons/elements/icon_element_dark.png",
+      "status": "ready"
+    },
+    {
+      "id": "icon_element_normal",
+      "category": "icons_elements",
+      "display_name": "Element Icon: Normal",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/icons/elements/icon_element_normal.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_atk_buff",
+      "category": "icons_effects",
+      "display_name": "Effect: Attack Buff",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_atk_buff.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_def_buff",
+      "category": "icons_effects",
+      "display_name": "Effect: Defense Buff",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_def_buff.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_poison",
+      "category": "icons_effects",
+      "display_name": "Effect: Poison",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_poison.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_burn",
+      "category": "icons_effects",
+      "display_name": "Effect: Burn",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_burn.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_shield",
+      "category": "icons_effects",
+      "display_name": "Effect: Shield",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_shield.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_regen",
+      "category": "icons_effects",
+      "display_name": "Effect: Regen",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_regen.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_undying",
+      "category": "icons_effects",
+      "display_name": "Effect: Undying",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_undying.png",
+      "status": "ready"
+    },
+    {
+      "id": "icon_effect_spd_buff",
+      "category": "icons_effects",
+      "display_name": "Effect Icon: Speed Buff",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/icon_effect_spd_buff.png",
+      "status": "ready"
+    },
+    {
+      "id": "icon_effect_evasion",
+      "category": "icons_effects",
+      "display_name": "Effect Icon: Evasion Buff",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/icon_effect_evasion.png",
+      "status": "ready"
+    },
+    {
+      "id": "icon_effect_bleed",
+      "category": "icons_effects",
+      "display_name": "Effect Icon: Bleed",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/icon_effect_bleed.png",
+      "status": "ready"
+    },
+    {
+      "id": "icon_effect_paralyze",
+      "category": "icons_effects",
+      "display_name": "Effect Icon: Paralyze",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/icon_effect_paralyze.png",
+      "status": "ready"
+    },
+    {
+      "id": "checkbox_unchecked",
+      "category": "controls",
+      "display_name": "Checkbox (Unchecked)",
+      "logic_width": 12,
+      "logic_height": 12,
+      "scale": 2,
+      "target_width": 24,
+      "target_height": 24,
+      "file_path": "resources/assets/ui/controls/checkbox_unchecked.png",
+      "status": "ready"
+    },
+    {
+      "id": "checkbox_checked",
+      "category": "controls",
+      "display_name": "Checkbox (Checked)",
+      "logic_width": 12,
+      "logic_height": 12,
+      "scale": 2,
+      "target_width": 24,
+      "target_height": 24,
+      "file_path": "resources/assets/ui/controls/checkbox_checked.png",
+      "status": "ready"
+    },
+    {
+      "id": "checkbox_hover",
+      "category": "controls",
+      "display_name": "Checkbox (Hover)",
+      "logic_width": 12,
+      "logic_height": 12,
+      "scale": 2,
+      "target_width": 24,
+      "target_height": 24,
+      "file_path": "resources/assets/ui/controls/checkbox_hover.png",
+      "status": "ready"
+    },
+    {
+      "id": "slider_track",
+      "category": "controls",
+      "display_name": "Slider Track",
+      "logic_width": 80,
+      "logic_height": 4,
+      "scale": 2,
+      "target_width": 160,
+      "target_height": 8,
+      "slice_insets": {
+        "top": 2,
+        "left": 2,
+        "bottom": 2,
+        "right": 2
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/controls/slider_track.png",
+      "status": "ready"
+    },
+    {
+      "id": "slider_thumb",
+      "category": "controls",
+      "display_name": "Slider Thumb Handle",
+      "logic_width": 8,
+      "logic_height": 12,
+      "scale": 2,
+      "target_width": 16,
+      "target_height": 24,
+      "file_path": "resources/assets/ui/controls/slider_thumb.png",
+      "status": "ready"
+    },
+    {
+      "id": "slider_fill",
+      "category": "controls",
+      "display_name": "Slider Track Fill",
+      "logic_width": 80,
+      "logic_height": 4,
+      "scale": 2,
+      "target_width": 160,
+      "target_height": 8,
+      "file_path": "resources/assets/ui/controls/slider_fill.png",
+      "status": "ready"
+    },
+    {
+      "id": "input_text_field",
+      "category": "controls",
+      "display_name": "Name Entry Text Field Border",
+      "logic_width": 64,
+      "logic_height": 20,
+      "scale": 2,
+      "target_width": 128,
+      "target_height": 40,
+      "slice_insets": {
+        "top": 3,
+        "left": 3,
+        "bottom": 3,
+        "right": 3
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/controls/input_text_field.png",
+      "status": "ready"
+    },
+    {
+      "id": "input_cursor",
+      "category": "controls",
+      "display_name": "Text Entry Typing Cursor",
+      "logic_width": 2,
+      "logic_height": 14,
+      "scale": 2,
+      "target_width": 4,
+      "target_height": 28,
+      "file_path": "resources/assets/ui/controls/input_cursor.png",
+      "status": "ready"
+    },
+    {
+      "id": "card_class_warrior",
+      "category": "cards",
+      "display_name": "Hero Class Card: Warrior",
+      "logic_width": 72,
+      "logic_height": 100,
+      "scale": 2,
+      "target_width": 144,
+      "target_height": 200,
+      "file_path": "resources/assets/ui/cards/card_class_warrior.png",
+      "status": "ready"
+    },
+    {
+      "id": "card_class_mage",
+      "category": "cards",
+      "display_name": "Hero Class Card: Mage",
+      "logic_width": 72,
+      "logic_height": 100,
+      "scale": 2,
+      "target_width": 144,
+      "target_height": 200,
+      "file_path": "resources/assets/ui/cards/card_class_mage.png",
+      "status": "ready"
+    },
+    {
+      "id": "card_class_archer",
+      "category": "cards",
+      "display_name": "Hero Class Card: Archer",
+      "logic_width": 72,
+      "logic_height": 100,
+      "scale": 2,
+      "target_width": 144,
+      "target_height": 200,
+      "file_path": "resources/assets/ui/cards/card_class_archer.png",
+      "status": "ready"
+    },
+    {
+      "id": "card_dungeon_undead",
+      "category": "cards",
+      "display_name": "Dungeon Card: Undead Crypt",
+      "logic_width": 80,
+      "logic_height": 110,
+      "scale": 2,
+      "target_width": 160,
+      "target_height": 220,
+      "file_path": "resources/assets/ui/cards/card_dungeon_undead.png",
+      "status": "ready"
+    },
+    {
+      "id": "card_dungeon_orc",
+      "category": "cards",
+      "display_name": "Dungeon Card: Orc Stronghold",
+      "logic_width": 80,
+      "logic_height": 110,
+      "scale": 2,
+      "target_width": 160,
+      "target_height": 220,
+      "file_path": "resources/assets/ui/cards/card_dungeon_orc.png",
+      "status": "ready"
+    },
+    {
+      "id": "card_dungeon_infernal",
+      "category": "cards",
+      "display_name": "Dungeon Card: Infernal Abyss",
+      "logic_width": 80,
+      "logic_height": 110,
+      "scale": 2,
+      "target_width": 160,
+      "target_height": 220,
+      "file_path": "resources/assets/ui/cards/card_dungeon_infernal.png",
+      "status": "ready"
+    },
+    {
+      "id": "card_dungeon_citadel",
+      "category": "cards",
+      "display_name": "Dungeon Card: Dark Citadel",
+      "logic_width": 80,
+      "logic_height": 110,
+      "scale": 2,
+      "target_width": 160,
+      "target_height": 220,
+      "file_path": "resources/assets/ui/cards/card_dungeon_citadel.png",
+      "status": "ready"
+    },
+    {
+      "id": "badge_elem_fire",
+      "category": "badges",
+      "display_name": "Element Badge: Fire",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/badges/badge_elem_fire.png",
+      "status": "ready"
+    },
+    {
+      "id": "badge_elem_water",
+      "category": "badges",
+      "display_name": "Element Badge: Water",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/badges/badge_elem_water.png",
+      "status": "ready"
+    },
+    {
+      "id": "badge_elem_wind",
+      "category": "badges",
+      "display_name": "Element Badge: Wind",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/badges/badge_elem_wind.png",
+      "status": "ready"
+    },
+    {
+      "id": "badge_elem_ground",
+      "category": "badges",
+      "display_name": "Element Badge: Ground",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/badges/badge_elem_ground.png",
+      "status": "ready"
+    },
+    {
+      "id": "badge_elem_holy",
+      "category": "badges",
+      "display_name": "Element Badge: Holy",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/badges/badge_elem_holy.png",
+      "status": "ready"
+    },
+    {
+      "id": "badge_elem_dark",
+      "category": "badges",
+      "display_name": "Element Badge: Dark",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/badges/badge_elem_dark.png",
+      "status": "ready"
+    },
+    {
+      "id": "badge_elem_normal",
+      "category": "badges",
+      "display_name": "Element Badge: Normal",
+      "logic_width": 32,
+      "logic_height": 32,
+      "scale": 2,
+      "target_width": 64,
+      "target_height": 64,
+      "file_path": "resources/assets/ui/badges/badge_elem_normal.png",
+      "status": "ready"
+    },
+    {
+      "id": "card_class_paladin",
+      "category": "cards",
+      "display_name": "Hero Class Card: Paladin",
+      "logic_width": 72,
+      "logic_height": 100,
+      "scale": 2,
+      "target_width": 144,
+      "target_height": 200,
+      "file_path": "resources/assets/ui/cards/card_class_paladin.png",
+      "status": "ready"
+    },
+    {
+      "id": "bar_shield_frame",
+      "category": "bars",
+      "display_name": "Shield Bar Frame",
+      "logic_width": 100,
+      "logic_height": 6,
+      "scale": 2,
+      "target_width": 200,
+      "target_height": 12,
+      "slice_insets": {
+        "top": 2,
+        "left": 2,
+        "bottom": 2,
+        "right": 2
+      },
+      "symmetry": "horizontal",
+      "file_path": "resources/assets/ui/bars/bar_shield_frame.png",
+      "status": "ready"
+    },
+    {
+      "id": "bar_shield_fill",
+      "category": "bars",
+      "display_name": "Shield Bar Cyan Fill",
+      "logic_width": 100,
+      "logic_height": 4,
+      "scale": 2,
+      "target_width": 200,
+      "target_height": 8,
+      "file_path": "resources/assets/ui/bars/bar_shield_fill.png",
+      "status": "ready"
+    },
+    {
+      "id": "plate_turn_hero",
+      "category": "combat",
+      "display_name": "Hero Turn Indicator Plate",
+      "logic_width": 80,
+      "logic_height": 20,
+      "scale": 2,
+      "target_width": 160,
+      "target_height": 40,
+      "file_path": "resources/assets/ui/combat/plate_turn_hero.png",
+      "status": "ready"
+    },
+    {
+      "id": "plate_turn_monster",
+      "category": "combat",
+      "display_name": "Monster Turn Indicator Plate",
+      "logic_width": 80,
+      "logic_height": 20,
+      "scale": 2,
+      "target_width": 160,
+      "target_height": 40,
+      "file_path": "resources/assets/ui/combat/plate_turn_monster.png",
+      "status": "ready"
+    },
+    {
+      "id": "frame_combat_log",
+      "category": "combat",
+      "display_name": "Combat Log Decorative Frame",
+      "logic_width": 64,
+      "logic_height": 64,
+      "scale": 2,
+      "target_width": 128,
+      "target_height": 128,
+      "slice_insets": {
+        "top": 6,
+        "left": 6,
+        "bottom": 6,
+        "right": 6
+      },
+      "symmetry": "full",
+      "file_path": "resources/assets/ui/combat/frame_combat_log.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_damage_reduction",
+      "category": "icons_effects",
+      "display_name": "Effect: Damage Reduction",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_damage_reduction.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_acc_buff",
+      "category": "icons_effects",
+      "display_name": "Effect: Accuracy Buff",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_acc_buff.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_crit_buff",
+      "category": "icons_effects",
+      "display_name": "Effect: Critical Buff",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_crit_buff.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_res_buff",
+      "category": "icons_effects",
+      "display_name": "Effect: Resistance Buff",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_res_buff.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_weaken",
+      "category": "icons_effects",
+      "display_name": "Effect: Weaken (Atk Down)",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_weaken.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_def_down",
+      "category": "icons_effects",
+      "display_name": "Effect: Defense Down",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_def_down.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_frost",
+      "category": "icons_effects",
+      "display_name": "Effect: Frost",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_frost.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_blind",
+      "category": "icons_effects",
+      "display_name": "Effect: Blind (Acc Down)",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_blind.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_evasion_down",
+      "category": "icons_effects",
+      "display_name": "Effect: Evasion Down",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_evasion_down.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_crit_down",
+      "category": "icons_effects",
+      "display_name": "Effect: Critical Down",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_crit_down.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_res_down",
+      "category": "icons_effects",
+      "display_name": "Effect: Resistance Down",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_res_down.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_vulnerable",
+      "category": "icons_effects",
+      "display_name": "Effect: Vulnerable",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_vulnerable.png",
+      "status": "ready"
+    },
+    {
+      "id": "eff_instant_death",
+      "category": "icons_effects",
+      "display_name": "Effect: Instant Death",
+      "logic_width": 16,
+      "logic_height": 16,
+      "scale": 2,
+      "target_width": 32,
+      "target_height": 32,
+      "file_path": "resources/assets/ui/icons/effects/eff_instant_death.png",
+      "status": "ready"
+    },
+    {
+      "id": "bg_dungeon_undead",
+      "category": "backgrounds",
+      "display_name": "Undead Crypt Dungeon Background",
+      "logic_width": 480,
+      "logic_height": 320,
+      "scale": 1,
+      "target_width": 480,
+      "target_height": 320,
+      "file_path": "resources/assets/ui/backgrounds/bg_dungeon_undead.png",
+      "status": "ready"
+    },
+    {
+      "id": "bg_dungeon_orc",
+      "category": "backgrounds",
+      "display_name": "Orc Stronghold Dungeon Background",
+      "logic_width": 480,
+      "logic_height": 320,
+      "scale": 1,
+      "target_width": 480,
+      "target_height": 320,
+      "file_path": "resources/assets/ui/backgrounds/bg_dungeon_orc.png",
+      "status": "ready"
+    },
+    {
+      "id": "bg_dungeon_infernal",
+      "category": "backgrounds",
+      "display_name": "Infernal Abyss Dungeon Background",
+      "logic_width": 480,
+      "logic_height": 320,
+      "scale": 1,
+      "target_width": 480,
+      "target_height": 320,
+      "file_path": "resources/assets/ui/backgrounds/bg_dungeon_infernal.png",
+      "status": "ready"
+    },
+    {
+      "id": "bg_dungeon_citadel",
+      "category": "backgrounds",
+      "display_name": "Dark Citadel Dungeon Background",
+      "logic_width": 480,
+      "logic_height": 320,
+      "scale": 1,
+      "target_width": 480,
+      "target_height": 320,
+      "file_path": "resources/assets/ui/backgrounds/bg_dungeon_citadel.png",
+      "status": "ready"
+    },
+    {
+      "id": "bg_reward",
+      "category": "backgrounds",
+      "display_name": "Reward & Campfire Background",
+      "logic_width": 480,
+      "logic_height": 320,
+      "scale": 1,
+      "target_width": 480,
+      "target_height": 320,
+      "file_path": "resources/assets/ui/backgrounds/bg_reward.png",
+      "status": "ready"
+    },
+    {
+      "id": "bg_victory",
+      "category": "backgrounds",
+      "display_name": "Victory Celebration Background",
+      "logic_width": 480,
+      "logic_height": 320,
+      "scale": 1,
+      "target_width": 480,
+      "target_height": 320,
+      "file_path": "resources/assets/ui/backgrounds/bg_victory.png",
+      "status": "ready"
+    },
+    {
+      "id": "bg_defeat",
+      "category": "backgrounds",
+      "display_name": "Defeat Crypt Background",
+      "logic_width": 480,
+      "logic_height": 320,
+      "scale": 1,
+      "target_width": 480,
+      "target_height": 320,
+      "file_path": "resources/assets/ui/backgrounds/bg_defeat.png",
+      "status": "ready"
+    }
+  ]
+}
