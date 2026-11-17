@@ -1,12 +1,9 @@
 package source.application.combat;
 
-import source.domain.entity.effect.StatusEffect;
-import source.domain.entity.character.Character;
-import source.domain.entity.skill.Skill;
-
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
+import source.domain.entity.character.Character;
+import source.domain.entity.effect.StatusEffect;
+import source.domain.entity.skill.Skill;
 
 /**
  * Báo cáo bất biến biểu diễn kết quả của một bước hoặc một lượt chiến đấu,
@@ -47,141 +44,135 @@ public class TurnReport {
             List<ActionRecord> actionRecords,
             Character hero,
             Character monster) {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. this.battleState = battleState;
-        // 2. this.messages = messages == null ? List.of() : List.copyOf(messages);
-        // 3. this.actionRecords = actionRecords == null ? List.of() : List.copyOf(actionRecords);
-        // 4. this.hero = hero;
-        // 5. this.monster = monster;
-        // 6. if (hero != null && hero.getStats() != null)
+        this.battleState = battleState;
+        this.messages = messages == null ? List.of() : List.copyOf(messages);
+        this.actionRecords = actionRecords == null ? List.of() : List.copyOf(actionRecords);
+        this.hero = hero;
+        this.monster = monster;
+        if (hero != null && hero.getStats() != null){
+            this.heroHp = (int) Math.ceil(hero.getStats().getCurrentHp());
+            this.heroMaxHp = (int) Math.ceil(hero.getStats().getMaxHp());
+            this.heroSta = hero.getStats().getCurrentSta();
+            this.heroMaxSta = hero.getStats().getMaxSta();
+            this.heroShield = hero.getStats().getShield();
+            this.heroActiveEffects = List.copyOf(hero.getActiveEffects());
+        }
+        else{
+            this.heroHp = 0;
+            this.heroMaxHp = 0;
+            this.heroSta = 0;
+            this.heroShield = 0;
+            this.heroMaxSta = 0;
+            this.heroActiveEffects = List.of();
+        }
+
+        if (monster != null && monster.getStats() != null){
+            this.monsterHp = (int) Math.ceil(monster.getStats().getCurrentHp());
+            this.monsterMaxHp = (int) Math.ceil(monster.getStats().getMaxHp());
+            this.monsterSta = monster.getStats().getCurrentSta();
+            this.monsterMaxSta = monster.getStats().getMaxSta();
+            this.monsterShield = monster.getStats().getShield();
+            this.monsterActiveEffects = List.copyOf(monster.getActiveEffects());
+        }
+        else{
+            this.monsterHp = 0;
+            this.monsterMaxHp = 0;
+            this.monsterSta = 0;
+            this.monsterShield = 0;
+            this.monsterMaxSta = 0;
+            this.monsterActiveEffects = List.of();
+        }
+        
     }
 
     /** Trả về danh sách thông điệp chiến đấu đã định dạng. */
     public List<String> getMessages() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return messages;
-        return null;
+        return messages;
     }
 
     /** Trả về danh sách các bản ghi hành động chi tiết. */
     public List<ActionRecord> getActionRecords() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return actionRecords;
-        return null;
+        return actionRecords;
     }
 
     /** Trả về nhân vật anh hùng. */
     public Character getHero() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return hero;
-        return null;
+        return hero;
     }
 
     /** Trả về nhân vật quái vật. */
     public Character getMonster() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return monster;
-        return null;
+        return monster;
     }
 
     /** Kiểm tra xem trận đánh đã kết thúc với phần thắng thuộc về người chơi hay chưa. */
     public boolean isVictory() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return battleState == BattleSession.BattleState.VICTORY
-        // 2. && (monster == null || monster.getStats() == null || monster.getStats().getCurrentHp() <= 0);
-        return false;
+        return battleState == BattleSession.BattleState.VICTORY && (monster == null || monster.getStats() == null || monster.getStats().getCurrentHp() <= 0);
     }
 
     /** Kiểm tra xem trận đánh đã kết thúc với thất bại của người chơi hay chưa. */
     public boolean isDefeat() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return battleState == BattleSession.BattleState.DEFEAT
-        // 2. && (hero == null || hero.getStats() == null || hero.getStats().getCurrentHp() <= 0);
-        return false;
+        return battleState == BattleSession.BattleState.DEFEAT && (hero == null || hero.getStats() == null || hero.getStats().getCurrentHp() <= 0);
     }
 
     /** Trả về lượng HP của anh hùng tại thời điểm chụp báo cáo. */
     public int getHeroHp() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return heroHp;
-        return 0;
+        return heroHp;
     }
 
     /** Trả về lượng HP tối đa của anh hùng tại thời điểm chụp báo cáo. */
     public int getHeroMaxHp() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return heroMaxHp;
-        return 0;
+        return heroMaxHp;
     }
 
     /** Trả về lượng STA của anh hùng tại thời điểm chụp báo cáo. */
     public int getHeroSta() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return heroSta;
-        return 0;
+        return heroSta;
     }
 
     /** Trả về lượng STA tối đa của anh hùng tại thời điểm chụp báo cáo. */
     public int getHeroMaxSta() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return heroMaxSta;
-        return 0;
+        return heroMaxSta;
     }
 
     /** Trả về giá trị khiên của anh hùng tại thời điểm chụp báo cáo. */
     public int getHeroShield() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return heroShield;
-        return 0;
+        return heroShield;
     }
 
     /** Trả về danh sách bản sao các hiệu ứng của anh hùng tại thời điểm chụp báo cáo. */
     public List<StatusEffect> getHeroActiveEffects() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return heroActiveEffects;
-        return null;
+        return heroActiveEffects;
     }
 
     /** Trả về lượng HP của quái vật tại thời điểm chụp báo cáo. */
     public int getMonsterHp() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return monsterHp;
-        return 0;
+        return monsterHp;
     }
 
     /** Trả về lượng HP tối đa của quái vật tại thời điểm chụp báo cáo. */
     public int getMonsterMaxHp() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return monsterMaxHp;
-        return 0;
+        return monsterMaxHp;
     }
 
     /** Trả về lượng STA của quái vật tại thời điểm chụp báo cáo. */
     public int getMonsterSta() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return monsterSta;
-        return 0;
+        return monsterSta;
     }
 
     /** Trả về lượng STA tối đa của quái vật tại thời điểm chụp báo cáo. */
     public int getMonsterMaxSta() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return monsterMaxSta;
-        return 0;
+        return monsterMaxSta;
     }
 
     /** Trả về giá trị khiên của quái vật tại thời điểm chụp báo cáo. */
     public int getMonsterShield() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return monsterShield;
-        return 0;
+        return monsterShield;
     }
 
     /** Trả về danh sách bản sao các hiệu ứng của quái vật tại thời điểm chụp báo cáo. */
     public List<StatusEffect> getMonsterActiveEffects() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return monsterActiveEffects;
-        return null;
+        return monsterActiveEffects;
     }
 
     /**
@@ -204,62 +195,48 @@ public class TurnReport {
                 EffectService.TurnStartResult turnStartResult,
                 ActionService.ActionResult actionResult,
                 EffectService.AppliedEffect appliedEffect) {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. this.attackerName = attacker != null ? attacker.getName() : "";
-        // 2. this.targetName = target != null ? target.getName() : "";
-        // 3. this.attackerClass = attacker != null ? attacker.getClass().getSimpleName() : "";
-        // 4. this.skill = skill;
-        // 5. this.turnStartResult = turnStartResult;
-        // 6. this.actionResult = actionResult;
-    }
+            this.attackerName = attacker != null ? attacker.getName() : "";
+            this.targetName = target != null ? target.getName() : "";
+            this.attackerClass = attacker != null ? attacker.getClass().getSimpleName() : "";
+            this.skill = skill;
+            this.turnStartResult = turnStartResult;
+            this.actionResult = actionResult;
+            this.appliedEffect = appliedEffect;
+        }
 
         /** Trả về tên nhân vật thực hiện hành động. */
         public String getAttackerName() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return attackerName;
-        return null;
+        return attackerName;
     }
 
         /** Trả về tên nhân vật mục tiêu. */
         public String getTargetName() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return targetName;
-        return null;
+        return targetName;
     }
 
         /** Trả về tên lớp của nhân vật thực hiện hành động. */
         public String getAttackerClass() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return attackerClass;
-        return null;
+        return attackerClass;
     }
 
         /** Trả về kỹ năng được sử dụng. */
         public Skill getSkill() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return skill;
-        return null;
+        return skill;
     }
 
         /** Trả về kết quả xử lý hiệu ứng đầu lượt đi kèm hành động này. */
         public EffectService.TurnStartResult getTurnStartResult() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return turnStartResult;
-        return null;
+        return turnStartResult;
     }
 
         /** Trả về kết quả thực thi kỹ năng. */
         public ActionService.ActionResult getActionResult() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return actionResult;
-        return null;
+        return actionResult;
     }
 
         /** Trả về kết quả áp dụng hiệu ứng trạng thái của kỹ năng (nếu có). */
         public EffectService.AppliedEffect getAppliedEffect() {
-        // TODO: Hướng dẫn hiện thực:
-        // 1. return appliedEffect;
-        return null;
+        return appliedEffect;
     }
     }
 }
